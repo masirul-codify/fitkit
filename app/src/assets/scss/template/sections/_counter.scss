@@ -1,0 +1,79 @@
+
+/*** counter-card 1 ***/ 
+.counter-card {
+    display: inline-flex;
+    justify-content: start;
+    position: relative;
+    z-index: 1;
+    border-right: 2px solid $border-color5; 
+    height: 102px;
+    width: 275px;
+    @include sm{
+        width: auto;
+        border-right: 0;
+    } 
+    .card-details {
+        text-align: left;
+    }
+    .counter-card_number { 
+        color: $white-color; 
+        margin-bottom: 4px;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 74px;
+        text-align: center;
+        display: block; 
+        font-family: $title-font;
+    }
+    .counter-card_text { 
+        font-weight: 500;
+        font-size: 16px;
+        color: $gray-color3;
+        font-size: 16px; 
+        font-family: $body-font;
+        line-height: 26px; 
+        text-align: center;
+        display: inline-block;
+    }
+
+    .counter_plus{
+        font-weight: 300;
+        color: $theme-color;  
+        font-family: $body-font;
+    }
+  
+  &.style2{
+    padding: 109px 56px;
+    border: 1px solid $gray-color9;
+    width: 100%;
+    height: auto; 
+    .counter-card_number { 
+        color: $black-color;  
+    }
+    .counter-card_text {  
+        color: $body-color; 
+    }
+
+  }
+} 
+
+@include lg{
+    .counter-card {  
+        width: 235px;
+    }
+}
+@include md{
+    .counter-area{
+        .counter-card{
+            border-right: 0px;
+        }
+        
+    .d-md-center{
+        display: flex;
+        justify-content: center;
+    }
+    }
+
+}
+
+ 

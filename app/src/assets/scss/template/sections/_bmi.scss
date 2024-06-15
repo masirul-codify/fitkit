@@ -1,0 +1,317 @@
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 2s ease-in;
+    -webkit-transition: 2s ease-in;
+    -moz-transition: 2s ease-in;
+    -ms-transition: 2s ease-in;
+    -o-transition: 2s ease-in;
+}
+  
+  .modal-content {
+    position: absolute;
+    background-color: $gray-color5;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    border: 15px solid $gray-color8;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+  
+  .close {
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    background-color: $theme-color;
+    color: $white-color;
+    transition: 0.4s ease-in;
+    -webkit-transition: 0.4s ease-in;
+    -moz-transition: 0.4s ease-in;
+    -ms-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; 
+
+    @include sm{
+        width: 30px;
+        height: 30px;
+        line-height: 1.4; 
+        font-size: 20px;
+    }
+
+}
+  
+  .close:hover,
+  .close:focus {
+    color: $gray-color5;
+    background-color: $light-color;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .bmi-result-box{
+    padding: 25px;
+    .bmi{
+        color: $white-color;
+        font-family: $title-font;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 58px; /* 120.833% */
+        text-transform: capitalize; 
+        margin-bottom: 10px;
+        @include sm{
+            font-size: 25px;
+            line-height: 120.833% ;
+        }
+      }
+    
+     .comment{
+        color: $gray-color9; 
+        font-family: $title-font;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34px; /* 141.667% */
+        text-transform: capitalize; 
+        @include sm{
+            font-size: 16px;
+            line-height: 141.667%
+        }
+     }
+  }
+
+
+  .bmi-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: $gray-color5; 
+    clip-path: polygon(0% 0%, 100% 0%, 100% 72.184%, 100% 72.184%, 98.071% 72.962%, 96.175% 75.076%, 94.309% 78.192%, 92.473% 81.975%, 90.666% 86.092%, 88.887% 90.209%, 87.135% 93.992%, 85.409% 97.107%, 83.708% 99.221%, 82.031% 100%, 82.031% 100%, 74.99% 100%, 68.304% 100%, 61.895% 100%, 55.68% 100%, 49.579% 100%, 43.512% 100%, 37.398% 100%, 31.157% 100%, 24.707% 100%, 17.969% 100%, 17.969% 100%, 16.288% 99.221%, 14.584% 97.107%, 12.857% 93.992%, 11.104% 90.209%, 9.325% 86.092%, 7.519% 81.975%, 5.685% 78.192%, 3.821% 75.076%, 1.926% 72.962%, 0% 72.184%, 0% 0%);
+    @include md{
+        clip-path: none;
+    }
+    &.bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+
+.bmi-calculator-form { 
+    .form-group {
+        margin-bottom: 30px;
+        position: relative;   
+        &.last-child{
+            margin-bottom: 0px;
+            @include xl{
+                margin-bottom: 0px;
+            }
+            @include sm{
+                margin-bottom: 30px;
+            }
+        }
+
+        .form-control {
+            &.style-border {
+                background-color: $gray-color6;
+                border: 1px solid $border-color5;
+                border-radius: 0; 
+            }
+
+            &.rounded-border {
+                border-radius: 30px;
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                -ms-border-radius: 30px;
+                -o-border-radius: 30px;
+            }
+
+
+        }
+    }
+
+    .th-btn {
+        display: inline-block;
+        padding: 0;
+        margin-bottom: 0px;
+        &.last-child{
+            @include xl{
+                margin-bottom: 0px;
+            }
+        } 
+        input { 
+            color: $white-color;
+            width: auto;
+            height: auto; 
+            padding: 23px 50px;
+            border: none;
+            &:hover {
+                color: $gray-color5;
+            }
+        }
+        &.style4{
+            input { 
+                color: $white-color;
+                width: auto;
+                height: auto; 
+                padding: 20px 83px; 
+                border: none;
+                font-family: $body-font;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 15px; /* 107.143% */
+                text-transform: uppercase;
+                &:hover {
+                    color: $gray-color5;
+                }
+            }
+        }
+    }
+}
+
+/* Bmi area2 */
+.bmi-chart-wrapper {
+    padding: 35px 60px 60px 60px;
+    background-color: $gray-color6;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    h2 {
+        color: $white-color;
+        text-transform: capitalize;
+    }
+
+    h4 {
+        color: $white-color;
+        text-transform: capitalize;
+        padding: 15px 0px;
+        border-top: 1px solid $border-color2;
+        border-right: 1px solid $border-color2;
+        border-bottom: 0px;
+        margin-bottom: 0px; 
+
+    }
+
+    .status-title {
+        padding-left: 30px;
+        border-right: 0px;
+        border-bottom: 0px;
+        @include md{
+            padding-left: 0px;
+            border-right: 1px solid $border-color2;
+        } 
+    }
+
+    .point {
+        color: $gray-color3;
+        text-transform: capitalize;
+        padding: 18px 0px;
+        border-top: 1px solid $border-color2;
+        border-right: 1px solid $border-color2;
+
+        &:last-child {
+            padding: 18px 0px 6px 0px;
+             
+        }
+
+        &:first-child {
+            border-top: 0px;
+        } 
+    }
+
+    .status {
+        color: $gray-color3;
+        text-transform: capitalize;
+        padding: 18px 0px 18px 30px;
+        border-top: 1px solid $border-color2;
+        border-right: 0px solid $border-color2;
+
+        &:last-child {
+            padding: 18px 0px 6px 30px;
+            @include md{
+                padding: 18px 0px 6px 0px;
+                border-right: 1px solid $border-color2;
+                border-bottom: 1px solid $border-color2;
+            } 
+        }
+
+        &:first-child {
+            border-top: 0px;
+        }
+        @include md{
+            padding: 18px 0px 18px 0px;
+            border-right: 1px solid $border-color2;
+        } 
+    }
+
+    .footnote {
+        margin-top: 25px;
+        color: $gray-color3;
+        span {
+            color: $white-color;
+        } 
+    }
+}
+
+@include ml{
+    .bmi-chart-wrapper .status-title {
+        font-size: 28px;
+    }
+    .bmi-calculator-form .th-btn.style4 input { 
+        padding: 20px 69px; 
+    }
+}
+@include xl{ 
+    .bmi-calculator-form .th-btn.style4 input { 
+        padding: 20px 69px; 
+    }
+}
+@include lg{
+    .bmi-calculator-form .th-btn.style4 input {
+        padding: 20px 46px;
+    }
+}
+@include md{
+    .bmi-calculator-form .th-btn.style4 input {
+        padding: 20px 16px;
+    }
+}  
+@include xs{
+    .bmi-calculator-form .th-btn input { 
+        padding: 20px 24px;
+    }
+}

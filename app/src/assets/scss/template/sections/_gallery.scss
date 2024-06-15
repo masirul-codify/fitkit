@@ -1,0 +1,124 @@
+/* Gallery area */
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    &_img {
+        img {
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            transition: all 0.3s ease-in;
+            -webkit-transition: all 0.3s ease-in;
+            -moz-transition: all 0.3s ease-in;
+            -ms-transition: all 0.3s ease-in;
+            -o-transition: all 0.3s ease-in;
+        }
+    }
+
+    .card_content_wrapper {
+        position: absolute;
+        width: 85%;
+        height: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);  }
+
+.card_content {
+        opacity: 0;
+        visibility: hidden;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(244, 30, 30, 0.50);
+        background: rgba(244, 30, 30, 0.15);
+        backdrop-filter: blur(8.100000381469727px);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
+        .icon
+{
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            transform: translate(-0%, -50%);
+            height: 56px;
+            width: 56px;
+            line-height: 56px;
+            text-align: center;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            background: $theme-color;
+            display: inline-block;
+            color: $white-color;
+            line-height: 60px;
+            font-size: 24px;
+            position: relative;
+            margin-bottom: 90px;
+            -webkit-transform: translate(-0%, -50%);
+            -moz-transform: translate(-0%, -50%);
+            -ms-transform: translate(-0%, -50%);
+            -o-transform: translate(-0%, -50%);
+}
+    }
+
+    &:hover {
+        .gallery-card_img {
+            img {
+                transform: scale(1.02);
+                -webkit-transform: scale(1.02);
+                -moz-transform: scale(1.02);
+                -ms-transform: scale(1.02);
+                -o-transform: scale(1.02);
+}
+        }
+
+        .card_content{
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0%);
+            -webkit-transform: translateY(0%);
+            -moz-transform: translateY(0%);
+            -ms-transform: translateY(0%);
+            -o-transform: translateY(0%);
+}
+    }
+}
+@include sm{
+    .gallery-card .card_content_wrapper {
+        position: absolute;
+        width: 65%;
+        height: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+}

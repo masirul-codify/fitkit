@@ -1,0 +1,185 @@
+.widget_nav_menu,
+.widget_meta,
+.widget_quote,
+.widget_hours,
+.widget_services,
+.widget_categories {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 0 0;
+    }
+    
+    .menu,
+    > ul {
+        margin: -4px 0 0px 0;
+    }
+
+    a {
+        display: block;
+        border: none;  
+        flex-shrink: 0;
+        padding: 17.5px 25px;
+        font-size: 16px;
+        line-height: 1.313;
+        color: $body-color;
+        background: $white-color;
+        position: relative;
+        border-radius: 0px;
+        margin-bottom: 14px;
+        font-weight: 500;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        &:before 
+
+{
+            // display: none;
+            content: '\f061';
+            position: absolute;
+            right: 25px;
+            font-family: $icon-font;
+            font-weight: 400;
+            transition: all ease 0.4s;
+            -webkit-transition: all ease 0.4s;
+            -moz-transition: all ease 0.4s;
+            -ms-transition: all ease 0.4s;
+            -o-transition: all ease 0.4s;
+}
+        &:hover {
+            color: $white-color;
+            background: $theme-color;
+            &:before { 
+                color: $white-color;
+            }
+            i {
+                color: $white-color;
+            }
+        }
+        i {
+            margin-right: 10px;
+            color: $theme-color;
+            transition: 0.4s all;
+        }
+    }
+
+    li {
+        display: block;
+        position: relative;
+
+        > span {
+            display: block;
+            border: none; 
+            height: 56px;
+            flex-shrink: 0;
+            padding: 17.5px 25px;
+            font-size: 16px;
+            line-height: 1.313;
+            color: $body-color;
+            background: $white-color;
+            position: relative;
+            border-radius: 0px;
+            margin-bottom: 14px;
+            font-weight: 500;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            i{
+                margin-right: 10px;
+            }
+        }
+ 
+        
+    }
+ 
+}
+
+.widget_services,
+.widget_categories  { 
+
+    a {
+        display: block;
+        border: none;  
+        flex-shrink: 0;
+        padding: 17.5px 25px;
+        font-size: 16px;
+        line-height: 1.313;
+        color: $body-color;
+        background: $white-color;
+        position: relative;
+        border-radius: 0px;
+        margin-bottom: 14px;
+        font-weight: 500;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        &:before 
+
+{
+            display: none;
+            content: '\f061';
+            position: absolute;
+            right: 25px;
+            font-family: $icon-font;
+            font-weight: 400;
+            transition: all ease 0.4s;
+            -webkit-transition: all ease 0.4s;
+            -moz-transition: all ease 0.4s;
+            -ms-transition: all ease 0.4s;
+            -o-transition: all ease 0.4s;
+}
+        &:hover {
+            color: $white-color;
+            background: $theme-color;
+            box-shadow: 4px 0px 0px 0px #FBB9B9 inset;
+            &:before {
+                display: block;
+                color: $white-color;
+            }
+            i {
+                color: $white-color;
+            }
+        }
+        i {
+            margin-right: 10px;
+            color: $theme-color;
+            transition: 0.4s all;
+        }
+    } 
+ 
+}
+
+.widget_nav_menu,
+.widget_meta,
+.widget_pages {
+    a {
+        padding-right: 20px;
+    }
+}
+
+.widget_nav_menu {
+    .sub-menu {
+        margin-left: 10px;
+    }
+}
+
+.wp-block-archives {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+    a:not(:hover) {
+        color: inherit;
+    }
+}
+
+.th-blog ul.wp-block-archives li {
+    margin: 5px 0;
+}

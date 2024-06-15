@@ -1,0 +1,172 @@
+.finess-area {
+    margin-top: -30px;
+    .title-area {
+        margin-bottom: 20px;
+    }
+
+    .sec-title {
+        margin-bottom: 0px;
+    }
+
+    .th-btn.style2 {
+        &:after {
+            border-color: transparent transparent transparent $gray-color8;
+        }
+
+        &:before {
+            border-color: transparent $gray-color8 transparent transparent;
+        }
+
+        &:hover {
+            color: $white-color;
+        }
+
+    }
+
+    .desc {
+        margin-bottom: 30px;
+    }
+
+    .fitness-thumb {
+        overflow: hidden;
+        height: 470px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        .choose-slide-image {
+            position: relative; 
+            width: 100%;
+            height: 470px;
+            border: none;
+            background-color: transparent;
+            overflow: hidden;
+            .img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .foreground-img {
+                background-position: left center;
+                width: 50%; 
+                position: absolute; 
+                box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+                bottom: 0;
+                height: 100%;
+                &::before,
+                &::after {
+                  content: '';
+                  position: absolute;
+                  right: -2px;
+                  width: 4px;
+                  height: calc(50% - 25px);
+                  background: white;
+                  z-index: 3;
+                }
+        
+                &::before {
+                  top: 0;
+                  box-shadow: 0 -3px 8px 1px rgba(0, 0, 0, 0.3);
+                }
+        
+                &::after {
+                  bottom: 0;
+                  box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.3);
+                }
+            }
+
+           .slider { 
+                position: absolute;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                outline: none;
+                margin: 0;
+                padding: 0;
+                border: none;
+                -webkit-transition: all .2s;
+                transition: all .2s;
+                text-align: center; 
+                box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+                bottom: 0; 
+
+            }
+             .slider-button {
+                pointer-events: none;
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                border: 2px solid $white-color;
+                border-radius: 50%;
+                padding: 8px;
+                background-color: #FFE2E2;
+                left: calc(50% - 45px);
+                top: calc(50% - 45px);
+                text-align: center;
+                z-index: 3;
+                &:before {
+                    content: '\f0d9';
+                    color:$gray-color8; 
+                    font-family: "Font Awesome 6 Pro";
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 60px;  
+                    border-right: 2px solid $white-color; 
+                }
+                &:after {
+                    content: '\f0da';
+                    color: $gray-color8; 
+                    font-family: "Font Awesome 6 Pro";
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 60px;   
+                }
+            }
+        } 
+    }
+
+}
+
+ 
+
+@include lg {
+    .finess-area {
+        .btn-group {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            gap: 11px;
+            flex-direction: row;
+        }
+
+        .th-btn.style2 {
+            padding: 23px 40px;
+        }
+
+        .th-btn.style7 {
+            padding: 23px 23px;
+        }
+    } 
+}
+ 
+@include sm{ 
+.finess-area .fitness-thumb {
+    overflow: hidden;
+    height: auto;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+}  

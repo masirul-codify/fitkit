@@ -1,0 +1,302 @@
+/*----------------------------------------------
+    # work process area style here
+----------------------------------------------*/
+.work-process-area {
+    position: relative;
+
+    .shape1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .shape2 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        -webkit-transform: translate(-50%, -40%);
+        -moz-transform: translate(-50%, -40%);
+        -ms-transform: translate(-50%, -40%);
+        -o-transform: translate(-50%, -40%);
+    }
+}
+
+
+.process-box {
+    position: relative;
+    z-index: 3;
+
+    .process-box-img {
+        position: relative;
+        overflow: hidden;
+        width: 250px;
+        height: 250px;
+        display: inline-flex;
+        border-top: 0;
+        border-left: 10px solid $border-color3;
+        border-right: 10px solid $border-color3;
+        border-bottom: 20px solid $border-color3;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: all 0.8s ease;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
+
+        &:hover {
+            border-left: 10px solid $theme-color;
+            border-right: 10px solid $theme-color;
+            border-bottom: 20px solid $theme-color;
+
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+            border-radius: 150px;
+        }
+
+        .step {
+            position: absolute;
+            bottom: -47px;
+            left: 32%;
+            width: 88px;
+            height: 88px;
+            padding: 15px;
+            border-radius: 50%;
+            color: $white-color;
+            background-color: $theme-color;
+            text-align: center;
+            font-family: $body-font;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+
+    .image-container {
+        position: relative;
+        width: 270px;
+        height: 270px;
+
+        .image {
+            position: absolute;
+            top: 1%;
+            left: 4%;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            z-index: 3;
+            overflow: hidden;
+
+            img {
+                position: relative;
+                display: block;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                z-index: 3;
+            }
+
+            .step {
+                position: absolute;
+                bottom: -45%;
+                left: 20%;
+                width: 150px;
+                height: 150px;
+                text-align: center;
+                padding: 9px;
+                color: $white-color !important;
+                background-color: $theme-color !important;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                z-index: 4;
+
+            }
+        }
+
+        .image_bg {
+            position: absolute;
+            top: 1%;
+            left: 0;
+            width: 270px;
+            height: 270px;
+            flex-shrink: 0;
+            background-color: #D8DDE1;
+            z-index: 1;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+
+        &:hover {
+            .image_bg {
+                background-color: $theme-color;
+            }
+        }
+    }
+
+    .process-box_title {
+        text-align: center;
+    }
+
+    .process-box_text {
+        text-align: center;
+
+        p {
+            margin-bottom: -0.4em;
+        }
+    }
+}
+
+/* Work process area 2 */
+.work-process-area2{
+    position: relative;
+    overflow: hidden;
+    .title-area{
+        margin-bottom: 5em;
+    }
+    .shape1{
+        position: absolute;
+        top: 116px;
+        right: 0;
+    }
+    .shape2{
+        position: absolute;
+        top: 223px;
+        right: 0;
+    }
+}
+.process-box-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .process-box_img {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        line-height: 105px;
+        background-color: $gray-color9;
+        top: -20%;
+        left: 50%;
+        text-align: center;
+        flex-shrink: 0;
+        z-index: 3;
+        border: 10px solid $white-color;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        transform: translate(-50%, 20%);
+        -webkit-transform: translate(-50%, 20%);
+        -moz-transform: translate(-50%, 20%);
+        -ms-transform: translate(-50%, 20%);
+        -o-transform: translate(-50%, 20%);
+        img
+{
+            display: inline-block;
+            width: 84px;
+            height: 30px;
+            text-align: center;
+        }
+    }
+
+}
+
+.process-box {
+    &.style2 {
+        position: relative;
+        width: 290px;
+        height: 290px;
+        margin-top: 30px;
+        background: linear-gradient(180deg, #D8DDE1 0%, rgba(216, 221, 225, 0.00) 68.28%);
+        z-index: 2;
+        overflow: visible;
+        border-radius: 290px;
+        -webkit-border-radius: 290px;
+        -moz-border-radius: 290px;
+        -ms-border-radius: 290px;
+        -o-border-radius: 290px;
+
+        .process-box {
+            &_step {
+                text-align: center;
+                padding-top: 90px;
+                color: $gray-color4;
+                text-align: center;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+                /* 162.5% */
+            }
+
+            &_title {
+                margin-top: 5px;
+                padding: 0px 15px;
+                color: $gray-color8;
+                text-align: center;
+                font-family: $title-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 34px;
+                /* 141.667% */
+                text-transform: capitalize;
+            }
+
+            &_text {
+                margin-top: 15px;
+                color: $body-color;
+                text-align: center;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                /* 162.5% */
+            }
+        }
+    }
+
+}
+@include md{
+    .work-process-area2 {
+        .shape1,
+        .shape2 {
+            display: none;
+        }
+    }
+}
+@include sm{
+    .work-process-area2{ 
+        .shape1{
+            display: none;
+        }
+        .shape2{
+            display: none;
+        }
+    }
+}

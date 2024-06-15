@@ -1,0 +1,97 @@
+ 
+.gy-10 {
+  --bs-gutter-y: 10px;
+}
+.gy-13 {
+  --bs-gutter-y: 13px;
+}
+.gy-15 {
+  --bs-gutter-y: 15px;
+}
+.gy-20 {
+  --bs-gutter-y: 20px;
+}
+
+.gy-25 {
+  --bs-gutter-y: 25px;
+}
+
+.gy-30 {
+  --bs-gutter-y: 30px;
+}
+
+.gy-40 {
+  --bs-gutter-y: 40px;
+}
+
+.gy-50 {
+  --bs-gutter-y: 50px;
+}
+.gy-60 {
+  --bs-gutter-y: 60px;
+}
+.gy-70 {
+  --bs-gutter-y: 70px;
+}
+.gy-80 {
+  --bs-gutter-y: 80px;
+}
+
+.gx-10 {
+  --bs-gutter-x: 10px;
+}
+
+.gx-20 {
+  --bs-gutter-x: 20px;
+}
+.gx-30 {
+  --bs-gutter-x: 30px;
+}
+.gx-80 {
+  --bs-gutter-x: 80px;
+}
+.gx-120 {
+  --bs-gutter-x: 120px;
+}
+
+
+@include ml {
+  .gx-30 {
+    --bs-gutter-x: 30px;
+  }
+
+  .gx-25 {
+    --bs-gutter-x: 25px;
+  }
+
+  .gx-40 {
+    --bs-gutter-x: 40px;
+  }
+}
+@include lg{
+  .gx-80,
+  .gx-120 {
+    --bs-gutter-x: 23px;
+  }
+}
+@include md{
+  .gx-80,
+  .gx-120 {
+    --bs-gutter-x: 23px;
+  }
+}
+@include sm {
+  .gx-60,
+  .gx-30,
+  .gx-25,
+  .gx-40,
+  .gx-80,
+  .gx-120 {
+    --bs-gutter-x: 23px;
+  }
+}
+// @include md {
+//   .gy-50 {
+//     --bs-gutter-y: 40px;
+//   }  
+// }

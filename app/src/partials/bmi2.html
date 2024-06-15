@@ -1,0 +1,118 @@
+<!-- ==============================
+Bmi Area  02
+==============================-->
+<div class="bmi-area2 space-bottom overflow-hidden">
+    <div class="container">
+        <div class="row justify-content-center gx-60 gy-40">
+            <div class="col-12 col-xl-6">
+                <div class="title-area text-left mb-50">
+                    <span class="sub-title"><span class="single-line"></span> Body Mass Index </span>
+                    <h2 class="sec-title text-white mb-20">Calculate Your BMI Now</h2>
+                    <div class="desc">
+                        <p>
+                        Overrideds on hanging fruits to identify ball park value added activity to beta overrided the digitals divided with additionals clickthroughs from line.
+                        </p>
+                    </div>
+                </div>
+                <div class="bmi-calculator-form">
+                    <form class="bmi-form" id="form" name="bmiCalc">
+                        <div class="row gx-30">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input id="weight" class="form-control style-border rounded-border" placeholder="Weight / KG"
+                                        type="text" name="weight">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input id="height" class="form-control style-border rounded-border" placeholder="Height / CM"
+                                        type="text" name="height">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="number" class="form-control style-border rounded-border" name="age" id="age"
+                                        placeholder="Age">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <select id="sex" name="sex" class="form-select form-control style-border style3 rounded-border">
+                                        <option value="" disabled="disabled" selected="selected" hidden="">Sex</option>
+                                        <option value="1">Male</option>
+                                        <option value="2">Female</option>
+                                    </select>
+                                </div>
+                            </div>      
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input id="bmi_result" class="form-control style-border  rounded-border" placeholder="Your BMI" type="text" name="bmi" readonly>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input id="bmi_message" placeholder="This Means" class="form-control style-border  rounded-border" type="text" name="meaning" readonly>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 btn-group">
+                                <div class="th-btn style2">
+                                    <input class="style2" type="button" value="Calculate Now" onclick="calculateBMI()">
+                                </div>
+                                <div class="th-btn style5">
+                                    <input class="style2" type="button" value="ReCalculate" onclick="reCalculate()">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+            <div class="col-12 col-xl-6">
+                <div class="bmi-chart-wrapper">
+                    <h2>BMI Chart</h2>
+                    <div class="row gx-0">
+                        <div class="col-lg-5">
+                            <h4>BMI</h4>
+                            <div class="point">Below 18.5</div>
+                            <div class="point">18.5 - 24.9</div>
+                            <div class="point">25.0 - 29.9</div>
+                            <div class="point">30.0 - and Above</div> 
+                        </div>
+                        <div class="col-lg-7">
+                            <h4  class="status-title">WEIGHT STATUS</h4>
+                            <div class="status">Underweight</div>
+                            <div class="status">Healthy</div>
+                            <div class="status">Overweight</div>
+                            <div class="status">Obese</div> 
+                        </div>
+                        <div class="footnote"><span>BMR </span>metabolic rate / <span> BMI </span>body mass index</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bmi Modal Box -->
+            <!-- <div class="col-xl-12">
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-end">
+                                <div>
+                                    <span class="close">&times;</span>
+                                </div> 
+                            </div>
+                            <div class="col-12">
+                                <div class="bmi-result-box">
+                                    <div id="bmiResult" class="bmi"></div>
+                                    <div id="bmiMeaning" class="comment"></div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                  </div> 
+            </div> -->
+             
+        </div>
+    </div>
+</div>

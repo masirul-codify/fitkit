@@ -1,0 +1,536 @@
+.ripple-animation {
+  animation-duration: var(--ripple-ani-duration);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-name: ripple;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+
+.movingX {
+  animation: movingX 8s linear infinite;
+}
+
+@keyframes movingX {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.moving {
+  animation: moving 8s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.jump {
+  animation: jumpAni 7s linear infinite;
+}
+
+.jump1 {
+  animation: jumpAni 6s linear infinite;
+}
+
+.jump2 {
+  animation: jumpAni 5s linear infinite;
+}
+
+.jump3 {
+  animation: jumpAni 4s linear infinite;
+}
+
+@keyframes jumpAni {
+  0% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.jump-reverse {
+  animation: jumpReverseAni 7s linear infinite;
+}
+
+@keyframes jumpReverseAni {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.spin {
+  animation: spin 15s linear infinite;
+  -webkit-animation: spin 15s linear infinite;
+}
+
+.spin-slow {
+  animation: spin 50s linear infinite;
+  -webkit-animation: spin 50s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// This is for Progress bar animation also has a js code
+@keyframes animate-positive {
+  0% {
+    width: 0;
+  }
+}
+
+
+.scalein.th-animated {
+  --animation-name: scalein;
+}
+
+.slidetopleft.th-animated {
+  --animation-name: slidetopleft;
+}
+
+.slidebottomright.th-animated {
+  --animation-name: slidebottomright;
+}
+
+.slideinleft.th-animated {
+  --animation-name: slideinleft;
+}
+
+.slideinright.th-animated {
+  --animation-name: slideinright;
+}
+
+.slideinup.th-animated {
+  --animation-name: slideinup;
+}
+
+.slideindown.th-animated {
+  --animation-name: slideindown;
+}
+
+.rollinleft.th-animated {
+  --animation-name: rollinleft;
+}
+
+.rollinright.th-animated {
+  --animation-name: rollinright;
+}
+
+
+.scalein,
+.slidetopleft,
+.slidebottomright,
+.slideinleft,
+.slideinright,
+.slideindown,
+.slideinup,
+.rollinleft,
+.rollinright {
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-name: var(--animation-name);
+}
+
+.th-animated {
+  opacity: 1;
+}
+
+@keyframes slideinup {
+  0% {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideinright {
+  0% {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideindown {
+  0% {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slidebottomright {
+  0% {
+    opacity: 0;
+    transform: translateX(100px) translateY(100px);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes slidetopleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px) translateY(-100px);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+  0% {
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+
+  75% {
+    border-top-color: #fff;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: transparent;
+  }
+
+  100% {
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+.bg-anime-scratch {
+  animation: scratch 4s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes scratch {
+  0% {
+    height: 0;
+  }
+
+  70% {
+    height: 158px;
+  }
+
+  100% {
+    height: 158px;
+  }
+}
+
+.marquee {
+  animation: marquee 15s linear infinite;
+  -webkit-animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+}
+
+
+@keyframes fillAni {
+  0% {
+    stroke-dashoffset: 2500;
+    fill: transparent;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+    fill: $white-color;
+  }
+}
+
+@keyframes fillAni3 {
+  0% {
+    stroke-dashoffset: 2500;
+    fill: $theme-color;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke-width: 2;
+    fill: $white-color;
+  }
+}
+
+@keyframes opacitySlow{
+  0%{
+      opacity: 0;
+  }
+  50%{
+      opacity: 0.4;
+  }
+  75%{
+      opacity: 0.8;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
+
+/* Swiper Slider Text Animation Code */
+.animeslide-slide {
+  color: #fff;
+}
+
+.animeslide-slide {
+  position: relative;
+  padding: 15px 0;
+  min-height: 500px;
+  background-size: cover;
+}
+
+.animeslide-slide .container {
+  position: relative;
+}
+
+.animeslide-slide.swiper-slide-active [data-animate] {
+  opacity: 1;
+  transform: none;
+}
+
+.animeslide-slide.swiper-slide-active .animeslide-heading {
+  transition-delay: 2s;
+}
+
+.animeslide-slide.swiper-slide-active .animeslide-desc {
+  transition-delay: 55s;
+}
+
+.animeslide-heading {
+  margin-bottom: 25px;
+  transition-delay: 3s;
+}
+
+.animeslide-heading span {
+  font-size: 16px;
+  background-color: #f08723;
+  padding: 6px 12px 7px;
+  border-radius: 8px;
+  font-weight: normal;
+}
+
+.animeslide-desc {
+  padding: 15px 22px;
+  border-radius: 8px;
+  background-color: #202238;
+  max-width: 480px;
+  opacity: 0.9;
+}
+
+[data-animate] {
+  opacity: 0;
+  transition: all 9s ease-out;
+  -webkit-transition: all 9s ease-out;
+  -moz-transition: all 9s ease-out;
+  -ms-transition: all 9s ease-out;
+  -o-transition: all 9s ease-out;
+}
+
+[data-animate="bottom"] {
+  transform: translate3d(0, 25px, 0);
+  -webkit-transform: translate3d(0, 25px, 0);
+  -moz-transform: translate3d(0, 25px, 0);
+  -ms-transform: translate3d(0, 25px, 0);
+  -o-transform: translate3d(0, 25px, 0);
+}
+
+.animeslide-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #202238;
+  max-width: 600px;
+  z-index: 1;
+  padding: 35px 35px;
+  right: 0;
+  font-size: 14px;
+}
+
+.animeslide-bottom .cell {
+  position: relative;
+  opacity: 1;
+  z-index: 2;
+  height: 40px;
+  bottom: inherit;
+}
+
+.animeslide-bottom .animeslide-scrollbar {
+  margin-top: 16px;
+}
+
+.animeslide-bottom .animeslide-scrollbar-drag {
+  height: 6px;
+}
+
+.animeslide-bottom .animeslide-pagination {
+  font-size: 25px;
+  bottom: inherit;
+  color: #fff;
+}
+
+.animeslide-bottom .animeslide-pagination b {
+  font-size: 28px;
+  margin-top: -5px;
+}
+
+.animeslide-bottom .animeslide-pagination span {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.animeslide-button-next,
+.animeslide-button-prev {
+  outline: none;
+}
+
+.animeslide-button-next::after,
+.animeslide-button-prev::after {
+  font-size: 22px;
+  color: #fff;
+}
+
+
+
+
+
+/* Animation Styles */
+[data-animate] {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.6s ease-out;
+}
+
+[data-animate="right"] {
+  transform: translateX(100px);
+}
+
+.hero-subtitle[data-animate] {
+  transition-delay: 0.4s;
+}
+
+.hero-title[data-animate] {
+  transition-delay: 0.8s;
+}
+
+.hero-text[data-animate] {
+  transition-delay: 1.3s;
+}
+
+.hero-btn-wrapper[data-animate] {
+  transition-delay: 1.5s;
+}
+
+[data-animate].visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+ 

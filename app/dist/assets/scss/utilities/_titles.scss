@@ -1,0 +1,201 @@
+.sec-title {
+    margin-bottom: calc(var(--section-title-space) - 14px);
+    margin-top: -0.28em;
+    font-weight: 600;
+}
+
+.box-title {
+    font-size: 24px;
+    line-height: 1.417;
+    font-weight: 600;
+    margin-top: -0.30em;
+    a {
+        color: inherit;
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+
+.sec-text {
+    font-size: 16px;
+    ~ .sec-text {
+        margin-bottom: 0;
+        margin-top: 35px;
+    }
+}
+.title-area {
+    margin-bottom: calc(var(--section-title-space) - 17px);
+    position: relative;
+    z-index: 2;
+    margin-top: -7px;
+    .sub-title {
+        display: inline-block;  
+        position: relative;
+        margin-bottom: 19px;   
+        color: $theme-color; 
+        font-family: $title-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; /* 162.5% */
+        text-transform: uppercase;
+        .single-line{
+            margin-left: 65px;
+            &:before {
+                position: absolute;
+                content: '';
+                margin-top: -1px;
+                width: 50px;
+                background-color: $theme-color;
+                height: 1px;
+                transform: translate(-100%, 0);
+                top: 50%;
+                left: 52px;
+            }
+        }
+   
+        .double-line{        
+            &:before {
+            position: absolute;
+            content: '';
+            margin-top: -1px;
+            width: 50px;
+            background-color: $theme-color;
+            height: 1px;
+            transform: translate(-100%, 0);
+            top: 50%;
+            left: -10px;
+        } 
+            &:after{
+                position: absolute;
+                content: "";
+                margin-top: -1px;
+                width: 50px;
+                background-color: var(--theme-color);
+                height: 1px;
+                -webkit-transform: translate(-100%, 0);
+                -moz-transform: translate(-100%, 0);
+                -ms-transform: translate(-100%, 0);
+                -o-transform: translate(-100%, 0);
+                transform: translate(-100%, 0);
+                top: 50%;
+                right: -108px;
+            }
+        }
+
+    }
+    &.mb-0 {
+        .sec-title {
+            margin-bottom: 30px;
+        }
+    }
+    .th-btn {
+        margin-top: 40px;
+    }
+    .btn-group {
+        margin-top: 30px;
+        .th-btn {
+            margin: 0;
+        }
+    }
+    .checklist {
+        margin-top: 30px;
+    }
+    .content {
+        margin-bottom: 0;
+    }
+}
+.white-title {
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 9px;
+    margin-bottom: 19px;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: #fff;
+        height: 2px;
+        width: 50px;
+    }
+}
+.default-title {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+.single-page-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+@include lg {
+    .shadow-title {
+        font-size: 120px;
+        margin-bottom: -82px;
+    }
+    .title-area,
+    .sec-title {
+        --section-title-space: 60px;
+        &.mb-45 {
+            margin-bottom: 36px;
+        }
+        &.mb-50 {
+            margin-bottom: 40px;
+        }
+    }
+    .sec-btn,
+    .title-line {
+        --section-title-space: 55px;
+    }
+    .title-area .checklist {
+        margin-top: 25px;
+    }
+}
+
+@include md {
+    .shadow-title {
+        font-size: 100px;
+    }
+    .sec-btn,
+    .title-line {
+        --section-title-space: 50px;
+    }
+    .box-title {
+        font-size: 22px;
+    }
+}
+@include sm {
+    .sec-title.title-2,
+    .sec-title {
+        font-size: 34px;
+    }
+    .default-title {
+        font-size: 26px;
+    }
+}
+
+@include xs {
+    .sub-title {
+        font-size: 22px;
+        img {
+            max-width: 60px;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .sec-title.title-2,
+    .sec-title {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+.team-sec-1:hover .team-slider1 .swiper-slide:nth-of-type(even) {
+    margin-top: 100px;
+}

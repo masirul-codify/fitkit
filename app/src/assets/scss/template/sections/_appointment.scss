@@ -1,0 +1,18 @@
+/* Appointment area */
+.appointment-page-area{
+    .query_form_wrapper{
+        padding: 50px 60px 60px;
+    }
+}
+
+@include sm{
+    .appointment-page-area{
+        .query_form_wrapper{
+            padding: 30px 40px 40px;
+            h5{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    
+}

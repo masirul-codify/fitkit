@@ -1,0 +1,894 @@
+ 
+.service-area2{
+    position: relative; 
+    padding-top: 180px!important;
+    overflow-x: hidden;
+    overflow-y: visible;
+    border: none;  
+    padding: 2px;  
+    background-clip: padding-box;
+    box-shadow: 0 0 2px rgba(255, 254, 254, 1);
+    border-top: 2px solid $white-color;
+    .white-bg{
+        position: absolute;
+        top: -5px;
+        left: 0;
+        padding: 80px 10px;
+        width: 100%;
+        background-color: $white-color;
+        border: none;
+        z-index: 0;
+    } 
+}
+.service-area3 {
+    .title-area {
+        .sec-title {
+            margin-bottom: calc(var(--section-title-space) + 14px) !important;
+        }
+    }
+
+
+}
+ 
+.text-sliding-area2 {
+    position: relative;
+    overflow-wrap: break-word;
+    width: 105%;
+    background-color: $gray-color8;
+    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    top: -125px;
+    left: -10px;
+    overflow-x: hidden;
+
+}
+
+/* Service Card ---------------------------------- */
+.service-card {
+    &.style1 {
+        position: relative;
+        min-width: 285px; 
+        height: auto; 
+        background-color: #1D2229;
+        padding: 53px 14px 20px 30px;
+        text-align: center;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px; 
+
+        .service-card {
+
+            &_shape {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+
+                .svg-img path {
+                    fill-opacity: 1;
+                    stroke: $border-color7;
+                    fill: $border-color7;
+                    stroke-width: 5;
+                    stroke-dasharray: 2500;
+                    stroke-dashoffset: 2500;
+                    transition: 0.5s;
+                    -webkit-transition: 0.5s;
+                    -moz-transition: 0.5s;
+                    -ms-transition: 0.5s;
+                    -o-transition: 0.5s;
+                }
+            }
+
+            &_title {
+                color: $white-color;
+                font-family: $title-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 34px;
+                /* 141.667% */
+                text-transform: capitalize; 
+                padding: 0px;
+
+                a {
+                    color: $white-color;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+
+            &_text {
+                margin: 0 auto 12px;
+                color: $gray-color3;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                margin-bottom: 20px; 
+            }
+
+            &_icon {
+                position: absolute;
+                top: -15%;
+                left: 12%;
+                width: 80px;
+                height: 75px;
+                line-height: 70px;
+                text-align: center;
+                border-radius: 50%;
+                display: inline-block;
+                margin: auto;
+                background: $border-color7;
+                z-index: 1;
+                transition: 0.4s;
+                -moz-transition: 0.4s;
+                -ms-transition: 0.4s;
+                -o-transition: 0.4s;
+                -webkit-transition: 0.4s;
+                border: 5px solid $gray-color5;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                z-index: 3;
+
+                .svg-img path {
+                    fill-opacity: 1;
+                    stroke: $white-color;
+                    fill: $white-color;
+                    stroke-width: 1;
+                    stroke-dasharray: 2500;
+                    stroke-dashoffset: 2500;
+                }
+            }
+
+            &_btn {  
+                left: 30px; 
+                bottom: 30px;
+                a
+{
+                    position: relative;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 80px;
+                        height: 1px;
+                        background-color: $theme-color;
+                        z-index: 9;
+                        transition: 0.5s ease-out;
+                        -webkit-transition: 0.5s ease-out;
+                        -moz-transition: 0.5s ease-out;
+                        -ms-transition: 0.5s ease-out;
+                        -o-transition: 0.5s ease-out;
+}
+                }
+            }
+
+        }
+
+
+
+        &:hover {
+            .service-card_shape {
+                .svg-img path {
+                    stroke: $theme-color;
+                    fill: $theme-color;
+                }
+            } 
+
+            .service-card_icon {
+                background: $theme-color; 
+                path {
+                    animation: fillAni 7s ease-in-out;
+                    stroke: $white-color;
+                    fill: $white-color;
+                }
+            } 
+            .service-card_btn {  
+                a {
+                    position: relative;
+
+                    &:after {
+                        width: 103px;
+                    }
+                }
+
+
+
+            }
+        }
+    }
+
+    /***service 02***/
+    &.style2 {
+        width: auto;
+        height: auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+
+        .service-card {
+            &_thumb_area {
+                position: relative;
+                width: 100%;
+                height: 506px;
+                flex-shrink: 0;
+                border-radius: 30px;
+                background: $gray-color8;
+                overflow: hidden;
+
+                .shape1 {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 2;
+                }
+
+                .service-card {
+                    &_thumb {
+                        position: absolute;
+                        bottom: 0;
+                        left: 5%;
+                        z-index: 3;
+                    }
+
+                    &_thumb_text {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        padding: 20px 50px 0px 250px;
+                        color: $white-color;
+                        font-family: $title-font;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 46px;
+                        /* 127.778% */
+                        text-transform: capitalize;
+                        z-index: 3;
+                    }
+
+                    &_thumb_duration {
+                        position: absolute;
+                        bottom: 0;
+                        right: 20%;
+                        color: $white-color;
+                        text-align: center;
+                        font-family: $title-font;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 34px;
+                        /* 141.667% */
+                        text-transform: capitalize;
+                    }
+                }
+            }
+
+            &_wrapper {
+                background: $gray-color8;
+                margin-top: 30px;
+                padding: 35px 40px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: start;
+                border-radius: 30px;
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                -ms-border-radius: 30px;
+                -o-border-radius: 30px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                &:hover {
+                    .service-card_btn {
+                        a {
+                            color: $theme-color;
+
+                            &:after {
+                                background-color: $theme-color;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            &_icon {
+                position: relative;
+                margin-right: 20px;
+                width: 60px;
+                height: 40px;
+                flex-shrink: 0;
+            }
+
+            &_title {
+                color: $white-color;
+                font-family: $title-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 34px;
+                /* 141.667% */
+                text-transform: capitalize;
+                margin-bottom: 5px;
+            }
+
+            &_desc {
+                color: $gray-color4;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                /* 162.5% */
+                margin-bottom: 0px;
+            }
+
+            &_btn {
+                a {
+                    position: relative;
+                    color: $white-color;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 20px;
+                        left: 0;
+                        width: 104px;
+                        height: 1px;
+                        background-color: $white-color;
+                        transition: 0.5s;
+                        -webkit-transition: 0.5s;
+                        -moz-transition: 0.5s;
+                        -ms-transition: 0.5s;
+                        -o-transition: 0.5s;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    /** Service 03 **/
+    &.style3 {
+        position: relative;
+        min-width: 285px;
+        height: auto;
+        background-color: $white-color;
+        padding: 53px 14px 20px 30px;
+        text-align: center;
+        box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.06);
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        transition: 0.5s ease-in-out;
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -ms-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+
+        .service-card {
+
+            &_shape {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+
+                .svg-img path {
+                    fill-opacity: 1;
+                    stroke: $theme-color;
+                    fill: $theme-color;
+                    stroke-width: 5;
+                    stroke-dasharray: 2500;
+                    stroke-dashoffset: 2500;
+                    transition: 0.5s;
+                    -webkit-transition: 0.5s;
+                    -moz-transition: 0.5s;
+                    -ms-transition: 0.5s;
+                    -o-transition: 0.5s;
+                }
+            }
+
+            &_title {
+                color: $gray-color8;
+                font-family: $title-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 34px;
+                /* 141.667% */
+                text-transform: capitalize; 
+                padding: 0px;
+
+                a {
+                    color: $gray-color8;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+
+            &_text {
+                margin: 0 auto 12px;
+                color: $body-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                padding-bottom: 0px;
+            }
+
+            &_icon {
+                position: absolute;
+                top: -15%;
+                left: 12%;
+                width: 80px;
+                height: 75px;
+                line-height: 70px;
+                text-align: center;
+                border-radius: 50%;
+                display: inline-block;
+                margin: auto;
+                background: $theme-color;
+                z-index: 1;
+                transition: 0.4s;
+                -moz-transition: 0.4s;
+                -ms-transition: 0.4s;
+                -o-transition: 0.4s;
+                -webkit-transition: 0.4s;
+                border: 5px solid $white-color;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                z-index: 3;
+
+                .svg-img path {
+                    fill-opacity: 1;
+                    stroke: $white-color;
+                    fill: $white-color;
+                    stroke-width: 1;
+                    stroke-dasharray: 2500;
+                    stroke-dashoffset: 2500;
+                }
+            }
+
+            &_btn {
+                bottom: 30px;
+                left: 30px;
+                opacity: 1;
+                transition: 1s ease-in-out;
+                -webkit-transition: 1s ease-in-out;
+                -moz-transition: 1s ease-in-out;
+                -ms-transition: 1s ease-in-out;
+                -o-transition: 1s ease-in-out;
+
+                a {
+                    position: relative;
+                    color: $gray-color8;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 103px;
+                        height: 1px;
+                        background-color: $theme-color;
+                        z-index: 9;
+                        transition: 1s ease-out;
+                        -webkit-transition: 1s ease-out;
+                        -moz-transition: 1s ease-out;
+                        -ms-transition: 1s ease-out;
+                        -o-transition: 1s ease-out;
+                    }
+                }
+            }
+
+        }
+
+
+
+        &:hover {
+            background-color: $theme-color;
+
+            .service-card_shape {
+                .svg-img path {
+                    fill: $border-color7;
+                }
+            }
+
+            .service-card_icon {
+                background: $border-color7;
+
+                path {
+                    animation: fillAni 7s ease-in-out;
+                    stroke: $white-color;
+                    fill: $white-color;
+                }
+            }
+
+            .service-card_title {
+                a {
+                    color: $white-color;
+                }
+            }
+
+            .service-card_btn {
+                a {
+                    color: $white-color;
+
+                    &:after {
+                        background-color: $white-color;
+                    }
+                }
+
+            }
+
+            .service-card_text {
+                color: $white-color;
+            }
+        }
+    }
+
+    /** Service Page **/
+    &.style4 {
+        position: relative;  
+        flex-shrink: 0;
+        padding: 35px 35px;
+        height: auto;
+        background-color: $gray-color10;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        transition: 0.5s ease-in-out;
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -ms-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+
+        .shape1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            img {
+                position: relative;
+                filter: opacity(0.8) brightness(0.3) invert(1);
+                -webkit-filter: opacity(0.8) brightness(0.3) invert(1);
+                border-radius: 0px 30px 0px 0px;
+                z-index: 1;
+                transition: 0.3s ease-in-out;
+                -webkit-transition: 0.3s ease-in-out;
+                -moz-transition: 0.3s ease-in-out;
+                -ms-transition: 0.3s ease-in-out;
+                -o-transition: 0.3s ease-in-out;
+                -webkit-border-radius: 0px 30px 0px 0px;
+                -moz-border-radius: 0px 30px 0px 0px;
+                -ms-border-radius: 0px 30px 0px 0px;
+                -o-border-radius: 0px 30px 0px 0px;
+            }
+        }
+
+        .service-card {
+            &_content {
+                position: relative;
+                z-index: 5;
+            }
+
+            &_icon {
+                position: inherit;
+                padding: 20px;
+                display: inline-block;
+                background-color: $white-color;
+                box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.08);
+                margin-bottom: 30px;
+                z-index: 5;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                transition: 0.7s;
+                -webkit-transtion: 0.4s;
+                -moz-transition: 0.7s;
+                -ms-transition: 0.7s;
+                -o-transition: 0.7s;
+                -webkit-transition: 0.7s;
+            }
+
+            &_title {
+                color: $gray-color8;
+                font-family: $title-font;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 40px;
+                /* 133.333% */
+                text-transform: capitalize;
+            }
+
+            &_text p {
+                color: $body-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                /* 162.5% */
+            }
+
+            &_btn {
+                a {
+                    position: relative;
+                    color: $gray-color8;
+                    font-family: $body-font;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px;
+
+                    /* 171.429% */
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 18px;
+                        left: 0;
+                        width: 100px;
+                        height: 1px;
+                        background-color: $gray-color8;
+                    }
+                }
+
+            }
+        }
+
+        &:hover {
+            background-color: $gray-color8;
+
+            .shape1 {
+                img {
+                    filter: opacity(0.05);
+                    -webkit-filter: opacity(0.05);
+                }
+            }
+
+            .service-card_icon {
+                svg {
+                    filter: brightness(0) invert(1);
+                    -webkit-filter: brightness(0) invert(1);
+                }
+
+                background-color: $theme-color;
+                transform: rotateY(360deg);
+                -webkit-transform: rotateY(360deg);
+                -moz-transform: rotateY(360deg);
+                -ms-transform: rotateY(360deg);
+                -o-transform: rotateY(360deg);
+            }
+
+            .service-card_title {
+                color: $white-color;
+            }
+
+            .service-card_text p {
+                color: $gray-color3;
+            }
+
+            .service-card_btn {
+                a {
+                    color: $theme-color;
+
+                    &:after {
+                        background-color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Service details page */
+.service-details {
+    &_thumb {
+        img {
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+        }
+    }
+
+    &_title {
+        color: $gray-color8;
+        font-family: $title-font;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 58px;
+        /* 120.833% */
+        text-transform: capitalize;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    &_text {
+        p {
+            margin-bottom: 0;
+            color: $body-color;
+            font-family: $body-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            /* 162.5% */
+        }
+    }
+
+    &_subtitle {
+        color: $gray-color8;
+        font-family: $title-font;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        /* 133.333% */
+        text-transform: capitalize;
+        margin-top: 55px;
+        margin-bottom: 35px;
+    }
+
+    &_thumb_wrapper {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        gap: 30px;
+        img {
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+        }
+    }
+
+    &_faq {
+        margin-top: 60px;
+        background-color: $white-color;
+    } 
+} 
+
+@include xxl{
+    .service-area2 {
+        position: relative;
+        padding-top: 150px !important; 
+    }
+    .text-sliding-area2 { 
+        top: -109px; 
+        left: -10px;
+    }
+}
+
+@include ml{
+    .service-details-page-area{
+        .widget { 
+            padding: 30px 24px; 
+        }
+    }
+
+    .service-card.style1 { 
+        min-width: 264px; 
+        height: auto;  
+    }
+    .service-card.style2 .service-card_thumb_area .service-card_thumb_text { 
+        padding: 20px 25px 0px 237px; 
+    }
+    .service-card.style2 .service-card_thumb_area .service-card_thumb_duration { 
+        right: 16%; 
+    }
+    .service-area2 {
+        position: relative;
+        padding-top: 150px !important; 
+    }
+    .text-sliding-area2 { 
+        top: -109px; 
+        left: -10px;
+    }
+
+}
+ 
+@include xl{
+    .service-area2 {
+        position: relative;
+        padding-top: 140px !important;
+    }
+    .text-sliding-area2 {
+        top: -100px;
+        left: -10px;
+    }
+}
+
+@include lg{
+    .service-area2 .btn-wrapper {
+        margin-bottom: 60px;
+    } 
+    .service-card.style1 { 
+        min-width: 285px;
+        height: auto;  
+    }
+}
+ 
+@include md{ 
+    .service-card.style2 .service-card_thumb_area .service-card_thumb_text { 
+    padding: 20px 51px 0px 513px; 
+}
+.service-card.style2 .service-card_thumb_area .service-card_thumb_duration { 
+    right: 17%; 
+}
+.service-area2 {
+    position: relative;
+    padding-top: 105px !important;
+}
+.text-sliding-area2 {
+    top: -80px;
+    left: -10px;
+}
+}
+@include sm{
+    .service-card.style2 .service-card_thumb_area { 
+        width: 100%; 
+    }
+    .service-card.style2 .service-card_thumb_area .service-card_thumb_text {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px 50px 0px 294px; 
+        font-size: 21px; 
+        line-height: 28px; 
+    }
+    .service-card.style2 .service-card_thumb_area .service-card_thumb_duration {
+        position: absolute;
+        bottom: 0;
+        right: 11%; 
+        font-size: 17px; 
+        line-height: 27px; 
+    }
+
+}
+@include xs{
+    .service-area2 {
+        position: relative;
+        padding-top: 85px !important;
+    }
+    .text-sliding-area2 {
+        top: -70px;
+        left: -10px;
+    }
+}

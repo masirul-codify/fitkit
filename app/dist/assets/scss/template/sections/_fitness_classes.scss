@@ -1,0 +1,1048 @@
+.fitness-classes-area {
+    #v-pills-tab {
+        @include lg {
+            margin-top: 60px;
+        }
+    }
+
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        -webkit-box-orient: horizontal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        color: $gray-color8;
+        text-align: center;
+        font-family: $title-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        /* 150% */
+        text-transform: capitalize;
+        width: 255px;
+        height: 80px;
+        margin-bottom: 15px;
+        flex-shrink: 0;
+        line-height: inherit;
+        border: none;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+        color: $black-color;
+        background-color: $gray-color9;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+
+        &.active {
+            color: $white-color;
+            background-color: $theme-color;
+        }
+
+        @include xl {
+            width: 232px;
+            height: 80px;
+        }
+
+        @include lg {
+            width: 200px;
+            height: 80px;
+        }
+
+        @include md {
+            width: 116px;
+        }
+
+        @media (max-width: 800px) {
+            width: 86px;
+            font-size: 14px;
+            // line-height: 1.4;
+            flex-direction: row;
+            -webkit-box-orient: horizontal;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+
+        }
+
+        @media (max-width: 600px) {
+            width: 85.5px;
+            font-size: 14px;
+            // line-height: 1.4;
+
+        }
+
+        @media (max-width: 540px) {
+            width: 75px;
+            font-size: 14px;
+            // line-height: 1.4;
+
+        }
+
+        @media (max-width: 425px) {
+            width: 119px;
+            font-size: 14px;
+
+
+        }
+
+        @media (max-width: 375px) {
+            width: 156px;
+            font-size: 14px;
+            // line-height: 1.4;
+
+        }
+
+    }
+
+    .class_content_wrapper {
+        position: relative;
+
+        .fitness-tab_active-line {
+            position: absolute;
+            top: 3%;
+            left: -8%;
+            z-index: 2;
+            transform: translate(8%, -3%);
+            -webkit-transform: translate(8%, -3%);
+            -moz-transform: translate(8%, -3%);
+            -ms-transform: translate(8%, -3%);
+            -o-transform: translate(8%, -3%);
+        }
+
+        .personal-tab_active-line {
+            position: absolute;
+            top: 23%;
+            left: -8%;
+            z-index: 2;
+            transform: translate(8%, -23%);
+            -webkit-transform: translate(8%, -23%);
+            -moz-transform: translate(8%, -23%);
+            -ms-transform: translate(8%, -23%);
+            -o-transform: translate(8%, -23%);
+        }
+
+        .boxing-tab_active-line {
+            position: absolute;
+            top: 43%;
+            left: -8%;
+            z-index: 2;
+            transform: translate(8%, -43%);
+            -webkit-transform: translate(8%, -43%);
+            -moz-transform: translate(8%, -43%);
+            -ms-transform: translate(8%, -43%);
+            -o-transform: translate(8%, -43%);
+        }
+
+        .crossFit-tab_active-line {
+            position: absolute;
+            top: 62%;
+            left: -8%;
+            z-index: 2;
+            transform: translate(8%, -62%);
+            -webkit-transform: translate(8%, -62%);
+            -moz-transform: translate(8%, -62%);
+            -ms-transform: translate(8%, -62%);
+            -o-transform: translate(8%, -62%);
+        }
+
+        .yoga-tab_active-line {
+            position: absolute;
+            top: 81%;
+            left: -8%;
+            z-index: 2;
+            transform: translate(8%, -81%);
+            -webkit-transform: translate(8%, -81%);
+            -moz-transform: translate(8%, -81%);
+            -ms-transform: translate(8%, -81%);
+            -o-transform: translate(8%, -81%);
+        }
+
+        .psycho-tab_active-line {
+            position: absolute;
+            top: 100%;
+            left: -8%;
+            z-index: 2;
+            transform: translate(8%, -100%);
+            -webkit-transform: translate(8%, -100%);
+            -moz-transform: translate(8%, -100%);
+            -ms-transform: translate(8%, -100%);
+            -o-transform: translate(8%, -100%);
+        }
+
+        .classes_content {
+            position: relative;
+            background-color: $black-color;
+            z-index: 1;
+
+            .shape1 {
+                position: absolute;
+                top: 20px;
+                right: 40px;
+                z-index: 1;
+            }
+
+            .image {
+                img {
+                    width: 415px;
+                    height: 475px;
+                    flex-shrink: 0;
+                }
+            }
+
+            &_thumb_area {
+                position: relative;
+                z-index: 3;
+
+                .class {
+                    &_title {
+                        color: $white-color;
+                        font-family: $title-font;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 46px;
+                        /* 127.778% */
+                        text-transform: capitalize;
+                    }
+
+                    &_desc {
+                        color: $gray-color3;
+                        font-family: $body-font;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px;
+                        /* 162.5% */
+                        padding-right: 25px;
+
+                        @include xl {
+                            padding-right: 0px;
+                        }
+                    }
+                }
+
+                .icon_bg {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+
+                    .icon {
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        width: 77px;
+                        height: 77px;
+                        text-align: center;
+                        padding: 15px;
+                        flex-shrink: 0;
+                        color: $white-color;
+                        background-color: $theme-color;
+                        z-index: 3;
+                    }
+
+                    .bg {
+                        width: 80px;
+                        height: 80px;
+                        flex-shrink: 0;
+                        background-color: #383D46;
+                        z-index: 1;
+                    }
+                }
+
+                .profile {
+                    display: flex;
+                    align-items: center;
+                    padding: 3px;
+                    border: 1px solid $border-color2;
+                    margin-bottom: 33px;
+
+                    @include xl {
+                        margin-bottom: 38px;
+                    }
+
+                    &:first-child {
+                        border-left: none;
+                    }
+
+                    &_content {
+                        margin-left: 10px;
+
+                        &_name {
+                            color: $white-color;
+                            font-family: $title-font;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 28px;
+
+                            /* 155.556% */
+                            @include lg {
+                                font-size: 13px;
+                            }
+                        }
+
+                        &_designation {
+                            color: $gray-color3;
+                            font-family: $body-font;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 22px;
+                            /* 183.333% */
+                        }
+                    }
+
+                    &_contact {
+                        padding: 3px;
+                        border: 1px solid $border-color2;
+
+                        &:first-child,
+                        &:last-child {
+                            border-left: none;
+                            border-right: none;
+                        }
+
+                        &_title {
+                            color: $gray-color3;
+                            font-family: $body-font;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 22px;
+                            /* 183.333% */
+                        }
+
+                        &_number {
+                            color: $white-color;
+                            font-family: $title-font;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 28px;
+
+                            /* 155.556% */
+                            @include lg {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Fitness class card style1 */
+.fitness_class_card {
+    &.style1 {
+        position: relative;
+        padding-bottom: 30px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+
+        .fitness_class_content_wrapper {
+            position: relative;
+            width: 390px;
+            height: 400px;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+
+            .bg_shape1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+            }
+
+            .bg_shape2 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+            }
+        }
+
+
+        .fitness_class_card {
+            &_img {
+                position: relative;
+                padding: 30px 30px 0px;
+                text-align: center;
+                z-index: 2;
+
+                img {
+                    border-radius: 30px;
+                    -webkit-border-radius: 30px;
+                    -moz-border-radius: 30px;
+                    -ms-border-radius: 30px;
+                    -o-border-radius: 30px;
+                }
+
+            }
+
+            &_content {
+                position: relative;
+                padding: 24px 40px 40px;
+                text-align: center;
+                z-index: 2;
+            }
+
+            &_title {
+                color: $white-color;
+                text-align: center;
+                font-family: $title-font;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 40px;
+                /* 133.333% */
+                text-transform: capitalize;
+            }
+
+            &_text {
+                p {
+                    color: $gray-color3;
+                    text-align: center;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                    /* 162.5% */
+                    margin-bottom: 10px;
+                    transition: 0.5s ease-in-out;
+                    -webkit-transition: 0.5s ease-in-out;
+                    -moz-transition: 0.5s ease-in-out;
+                    -ms-transition: 0.5s ease-in-out;
+                    -o-transition: 0.5s ease-in-out;
+                }
+
+            }
+
+            &_btn {
+                position: absolute;
+                text-align: center;
+                z-index: 2;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                -webkit-transform: translate(-50%, 0%);
+                -moz-transform: translate(-50%, 0%);
+                -ms-transform: translate(-50%, 0%);
+                -o-transform: translate(-50%, 0%);
+
+                a {
+                    display: inline-block;
+                    width: 56px;
+                    height: 56px;
+                    line-height: 60px;
+                    text-align: center;
+                    background-color: $gray-color14;
+                    border-radius: 30px;
+                    -webkit-border-radius: 30px;
+                    -moz-border-radius: 30px;
+                    -ms-border-radius: 30px;
+                    -o-border-radius: 30px;
+
+                    i {
+                        transition: 0.3s ease-in-out;
+                        -webkit-transition: 0.3s ease-in-out;
+                        -moz-transition: 0.3s ease-in-out;
+                        -ms-transition: 0.3s ease-in-out;
+                        -o-transition: 0.3s ease-in-out;
+                        color: $white-color;
+                        text-align: center;
+                        font-family: "Font Awesome 6 Pro";
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: 26px;
+                        /* 130% */
+                        text-transform: uppercase;
+                    }
+
+                    &:hover {
+                        i {
+                            transform: translateX(2px);
+                            -webkit-transform: translateX(2px);
+                            -moz-transform: translateX(2px);
+                            -ms-transform: translateX(2px);
+                            -o-transform: translateX(2px);
+                        }
+                    }
+                }
+            }
+        }
+
+
+        &:hover {
+            .fitness_class_content_wrapper .bg_shape1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .fitness_class_content_wrapper .bg_shape2 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .fitness_class_card_btn a {
+                background-color: $theme-color;
+            }
+        }
+
+    }
+
+}
+
+/* Fitness class card Style2 */
+.fitness_class_card {
+    &.style2 {
+        position: relative;
+        width: 390px;
+        height: 390px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        overflow: hidden;
+
+        .fitness_class_card {
+            &_img {
+                position: relative;
+                z-index: 2;
+
+                img {
+                    border-radius: 30px;
+                    -webkit-border-radius: 30px;
+                    -moz-border-radius: 30px;
+                    -ms-border-radius: 30px;
+                    -o-border-radius: 30px;
+                }
+
+            }
+
+            &_content {
+                position: absolute;
+                bottom: 0;
+                left: 10px;
+                width: 370px;
+                max-height: 146px;
+                padding: 20px 30px 30px;
+                flex-shrink: 0;
+                text-align: center;
+                border-radius: 30px;
+                border: 1px solid $gray-color14;
+                background: rgba(29, 34, 41, 0.70);
+                backdrop-filter: blur(5.099999904632568px);
+                transition: max-height 0.7s ease-in-out;
+                -webkit-transition: max-height 0.7s ease-in-out;
+                -moz-transition: max-height 0.7s ease-in-out;
+                -ms-transition: max-height 0.7s ease-in-out;
+                -o-transition: max-height 0.7s ease-in-out;
+                z-index: 3;
+
+                &:hover {
+                    max-height: 400px;
+                }
+            }
+
+            &_title {
+                color: $white-color;
+                text-align: center;
+                font-family: $title-font;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 40px;
+                /* 133.333% */
+                text-transform: capitalize;
+            }
+
+            &_text {
+                p {
+                    color: $gray-color3;
+                    text-align: center;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                    /* 162.5% */
+                    margin-bottom: 10px;
+                    transition: 0.5s ease-in-out;
+                    -webkit-transition: 0.5s ease-in-out;
+                    -moz-transition: 0.5s ease-in-out;
+                    -ms-transition: 0.5s ease-in-out;
+                    -o-transition: 0.5s ease-in-out;
+                }
+
+            }
+
+            &_btn {
+                text-align: center;
+                opacity: 0;
+                visibility: hidden;
+
+                a {
+                    position: relative;
+                    color: $theme-color;
+                    text-align: center;
+                    font-family: $body-font;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 26px;
+                    /* 185.714% */
+                    text-transform: uppercase;
+                    background-color: transparent;
+
+                    i {
+                        transition: 0.3s ease-in-out;
+                        -webkit-transition: 0.3s ease-in-out;
+                        -moz-transition: 0.3s ease-in-out;
+                        -ms-transition: 0.3s ease-in-out;
+                        -o-transition: 0.3s ease-in-out;
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 18px;
+                        left: 0;
+                        width: 103px;
+                        height: 1px;
+                        background-color: $theme-color;
+                        z-index: 3;
+                    }
+
+                    &:hover {
+                        i {
+                            transform: translateX(5px);
+                            -webkit-transform: translateX(5px);
+                            -moz-transform: translateX(5px);
+                            -ms-transform: translateX(5px);
+                            -o-transform: translateX(5px);
+                        }
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .fitness_class_card_btn {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+/* Fitness Class Details */
+.fitness-class-details {
+    &-wrapper {
+        .checklist-wrapper {
+            margin-top: 48px;
+            margin-bottom: 7px;
+        }
+    }
+
+    &_thumb {
+        margin-bottom: 45px;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+            background: #D9D9D9;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+        }
+    }
+
+    &_thumb2 {
+        position: relative;
+        margin-top: 13px;
+
+        .video-box1 {
+            position: relative;
+            height: 334px;
+            object-fit: cover;
+            flex-shrink: 0;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+
+            .play-btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+            }
+        }
+
+    }
+
+    &_title {
+        margin-bottom: 20px;
+        color: $gray-color8;
+    }
+
+    &_subtitle {
+        margin-bottom: 19px;
+        color: $gray-color8;
+    }
+
+    &_text {
+        color: $body-color;
+        font-family: $body-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        /* 162.5% */
+    }
+
+}
+
+@include ml {
+    .fitness_class_card.style1 .fitness_class_content_wrapper {
+        position: relative;
+        width: 345px;
+        height: 413px;
+    }
+
+    .fitness_class_card.style1 .fitness_class_content_wrapper .bg_shape2,
+    .fitness_class_card.style1 .fitness_class_content_wrapper .bg_shape1 {
+        img {
+            height: 420px;
+        }
+    }
+
+    .fitness-classes-area .nav-link {
+        width: 227px;
+        height: 85px;
+    }
+
+    .fitness-classes-area .class_content_wrapper .fitness-tab_active-line {
+        top: 3%;
+        left: -9%;
+        transform: translate(9%, -3%);
+        -webkit-transform: translate(9%, -3%);
+        -moz-transform: translate(9%, -3%);
+        -ms-transform: translate(9%, -3%);
+        -o-transform: translate(9%, -3%);
+    }
+
+    .fitness-classes-area .class_content_wrapper .personal-tab_active-line {
+        top: 24%;
+        left: -9%;
+        transform: translate(9%, -24%);
+        -webkit-transform: translate(9%, -24%);
+        -moz-transform: translate(9%, -24%);
+        -ms-transform: translate(9%, -24%);
+        -o-transform: translate(9%, -24%);
+    }
+
+    .fitness-classes-area .class_content_wrapper .boxing-tab_active-line {
+        top: 42%;
+        left: -9%;
+        transform: translate(9%, -42%);
+        -webkit-transform: translate(9%, -42%);
+        -moz-transform: translate(9%, -42%);
+        -ms-transform: translate(9%, -42%);
+        -o-transform: translate(9%, -42%);
+    }
+
+    .fitness-classes-area .class_content_wrapper .crossFit-tab_active-line {
+        top: 61.5%;
+        left: -9%;
+        transform: translate(9%, -61.5%);
+        -webkit-transform: translate(9%, -61.5%);
+        -moz-transform: translate(9%, -61.5%);
+        -ms-transform: translate(9%, -61.5%);
+        -o-transform: translate(9%, -61.5%);
+    }
+
+    .fitness-classes-area .class_content_wrapper .yoga-tab_active-line {
+        position: absolute;
+        top: 85%;
+        left: -9%;
+        z-index: 2;
+        transform: translate(9%, -85%);
+        -webkit-transform: translate(9%, -85%);
+        -moz-transform: translate(9%, -85%);
+        -ms-transform: translate(9%, -85%);
+        -o-transform: translate(9%, -85%);
+    }
+
+    .fitness-classes-area .class_content_wrapper .psycho-tab_active-line {
+        position: absolute;
+        top: 99%;
+        left: -9%;
+        z-index: 2;
+        transform: translate(9%, -99%);
+        -webkit-transform: translate(9%, -99%);
+        -moz-transform: translate(9%, -99%);
+        -ms-transform: translate(9%, -99%);
+        -o-transform: translate(9%, -99%);
+    }
+}
+
+@include xl {
+    .fitness-classes-area .nav-link {
+        width: 227px;
+        height: 81px;
+    }
+
+    .fitness-classes-area .class_content_wrapper .fitness-tab_active-line {
+        top: 3.5%;
+        left: -9%;
+        transform: translate(9%, -3.5%);
+        -webkit-transform: translate(9%, -3.5%);
+        -moz-transform: translate(9%, -3.5%);
+        -ms-transform: translate(9%, -3.5%);
+        -o-transform: translate(9%, -3.5%);
+    }
+
+    .fitness-classes-area .class_content_wrapper .personal-tab_active-line {
+        top: 23%;
+        left: -9%;
+        transform: translate(9%, -23%);
+        -webkit-transform: translate(9%, -23%);
+        -moz-transform: translate(9%, -23%);
+        -ms-transform: translate(9%, -23%);
+        -o-transform: translate(9%, -23%);
+    }
+
+    .fitness-classes-area .class_content_wrapper .boxing-tab_active-line {
+        top: 40%;
+        left: -9%;
+        transform: translate(9%, -40%);
+        -webkit-transform: translate(9%, -40%);
+        -moz-transform: translate(9%, -40%);
+        -ms-transform: translate(9%, -40%);
+        -o-transform: translate(9%, -40%);
+    }
+
+    .fitness-classes-area .class_content_wrapper .crossFit-tab_active-line {
+        top: 59%;
+        left: -9%;
+        transform: translate(9%, -59%);
+        -webkit-transform: translate(9%, -59%);
+        -moz-transform: translate(9%, -59%);
+        -ms-transform: translate(9%, -59%);
+        -o-transform: translate(9%, -59%);
+    }
+
+    .fitness-classes-area .class_content_wrapper .yoga-tab_active-line {
+        position: absolute;
+        top: 82%;
+        left: -9%;
+        z-index: 2;
+        transform: translate(9%, -82%);
+        -webkit-transform: translate(9%, -82%);
+        -moz-transform: translate(9%, -82%);
+        -ms-transform: translate(9%, -82%);
+        -o-transform: translate(9%, -82%);
+    }
+
+    .fitness-classes-area .class_content_wrapper .psycho-tab_active-line {
+        position: absolute;
+        top: 100%;
+        left: -9%;
+        z-index: 2;
+        transform: translate(9%, -100%);
+        -webkit-transform: translate(9%, -100%);
+        -moz-transform: translate(9%, -100%);
+        -ms-transform: translate(9%, -100%);
+        -o-transform: translate(9%, -100%);
+    }
+}
+
+@include lg {
+    .fitness-classes-area .btn-wrapper {
+        justify-content: start;
+    }
+
+    .fitness-classes-area .nav-link {
+        width: 156px;
+        height: 80px;
+    }
+
+    .fitness_class_card.style1 .fitness_class_content_wrapper {
+        position: relative;
+        width: 400px;
+        height: 418px;
+    }
+
+    .fitness-class-details_subtitle.last-child {
+        margin-bottom: 19px;
+        margin-top: 35px;
+    }
+
+    .fitness-class-details_text {
+        margin-bottom: -1.5em;
+    }
+
+    .fitness-classes-area .class_content_wrapper .fitness-tab_active-line,
+    .fitness-classes-area .class_content_wrapper .personal-tab_active-line,
+    .fitness-classes-area .class_content_wrapper .boxing-tab_active-line,
+    .fitness-classes-area .class_content_wrapper .crossFit-tab_active-line,
+    .fitness-classes-area .class_content_wrapper .yoga-tab_active-line,
+    .fitness-classes-area .class_content_wrapper .psycho-tab_active-line {
+        display: none;
+    }
+}
+
+@include md {
+    .fitness-classes-area .nav-link {
+        width: 116px;
+        height: 80px;
+    }
+
+    .fitness-class-details_thumb2 {
+        position: relative;
+        margin-top: -1.5em;
+    }
+
+    .fitness_class_card.style1 .fitness_class_content_wrapper {
+        position: relative;
+        width: 345px;
+        height: 403px;
+    }
+
+    .fitness_class_card.style1 .fitness_class_content_wrapper .bg_shape2,
+    .fitness_class_card.style1 .fitness_class_content_wrapper .bg_shape1 {
+        img {
+            height: 410px;
+        }
+    }
+
+    .fitness_class_card.style2 {
+        position: relative;
+        width: 350px;
+        height: 350px;
+    }
+
+    .fitness_class_card.style2 .fitness_class_card_content {
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        width: 330px;
+        max-height: 146px;
+        padding: 20px 22px 30px;
+    }
+}
+
+@include sm {
+    .fitness-classes-area .nav-link {
+        width: 133px;
+        height: 80px;
+    }
+
+    .fitness-classes-area .class_content_wrapper .classes_content .image img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@include vxs {
+    .fitness-classes-area .nav-link {
+        width: 175px;
+        height: 60px;
+    }
+    .fitness-classes-area .class_content_wrapper .classes_content_thumb_area .class_desc { 
+        font-size: 14px; 
+        line-height: 24px; 
+    }
+    .fitness-classes-area .class_content_wrapper .classes_content_thumb_area .profile_content_name {
+        font-size: 12px;
+    }
+    .fitness-classes-area .class_content_wrapper .classes_content_thumb_area .profile_contact_number {
+        font-size: 12px;
+    }
+    .fitness-classes-area .class_content_wrapper .classes_content_thumb_area .profile_content_designation { 
+        font-size: 11px; 
+        line-height: 21px;
+    }
+    .fitness-classes-area .class_content_wrapper .classes_content_thumb_area .profile_contact_title { 
+        font-size: 11px; 
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 320px) {
+    .fitness-classes-area .nav-link {
+        width: 148px;
+    }
+    .fitness_class_card.style1 .fitness_class_content_wrapper {
+        position: relative;
+        width: 296px;
+        height: 398px;
+    }
+    .fitness_class_card.style2 {
+        position: relative;
+        width: 300px;
+        height: 350px;
+        overflow: hidden;
+    }
+    .fitness_class_card.style2 .fitness_class_card_content {
+        position: absolute;
+        bottom: 50px;
+        left: 10px;
+        width: 280px;
+        max-height: 175px;
+        padding: 20px 22px 30px;
+        overflow: hidden;
+    }
+}

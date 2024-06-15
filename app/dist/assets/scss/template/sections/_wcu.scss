@@ -1,0 +1,312 @@
+/*----------------------------------------------
+    # why choose us area style here
+----------------------------------------------*/
+
+.wcu-area {
+    overflow: hidden;
+
+    .title-area {
+        margin-bottom: 0px;
+
+        .sec-title {
+            margin-bottom: 20px;
+        }
+    }
+
+    .desc {
+        color: $body-color;
+        font-family: $body-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        /* 162.5% */
+        margin-bottom: 25px;
+    }
+
+    .checklist {
+        ul {
+            li {
+                color: $gray-color8;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.wcu-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 514px;
+
+    @include xl {
+        height: 517px;
+    }
+
+    .images {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        .img1 {
+            .img {
+                position: absolute;
+                top: 0;
+                right: -16%;
+                z-index: 2;
+                clip-path: polygon(0 0,
+                        340px 0,
+                        340px 320px,
+                        50px 249px,
+                        0 0);
+
+                @include lg {
+                    right: 30%;
+                }
+
+                @include md {
+                    right: 0;
+                }
+            }
+
+            .bg {
+                position: absolute;
+                top: 0;
+                right: -16%;
+                z-index: 1;
+                width: 355px;
+                height: 367px;
+                background-color: $white-color;
+                ;
+                clip-path: polygon(0 0, 100% 0, 101% 92%, 15% 72%);
+
+                @include lg {
+                    right: 30%;
+                }
+
+                @include md {
+                    right: 0;
+                }
+            }
+
+        }
+
+
+
+        .img2 {
+            position: absolute;
+            top: 70px;
+            left: 0;
+            width: 444px;
+            height: 442px;
+
+            @include xl {
+                height: 446px;
+            }
+        }
+    }
+
+}
+
+
+/* Wcu Area2 */
+.wcu-area2 {
+    position: relative;
+    overflow: hidden;
+
+    .wcu-thumb1-1 {
+        position: relative;
+        margin-left: -340px;
+        @include sm{
+            margin-left: 0;
+        }
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .checklist {
+        ul {
+            margin-bottom: 10px;
+
+            li {
+                color: $white-color;
+                font-family: $title-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+                /* 162.5% */
+
+                i,
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    color: $theme-color;
+                    font-size: 24px;
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}
+
+.wcu {
+    &_title {
+        color: $white-color;
+        font-family: $title-font;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 46px;
+        /* 127.778% */
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    &_desc {
+        color: $gray-color3;
+        font-family: $body-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        /* 162.5% */
+        margin-bottom: 25px;
+    }
+}
+
+
+/* Wcu area 3 */
+.wcu-area3 {
+    .title-area {
+        margin-bottom: 50px;
+    }
+
+    .sec-title {
+        margin-bottom: 20px;
+    }
+
+}
+
+.wcu_box {
+    &.style3 {
+        padding: 40px 40px 10px 40px;
+        background: $white-color;
+        box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        transition: 0.5s ease-in-out;
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -ms-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+
+        .wcu {
+            &_icon_wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                margin-bottom: 27px;
+            }
+
+            &_icon {
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                flex-shrink: 0;
+                border-radius: 20px;
+                background: $gray-color9;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                transition: 0.4s ease-in-out;
+                -webkit-transition: 0.4s ease-in-out;
+                -moz-transition: 0.4s ease-in-out;
+                -ms-transition: 0.4s ease-in-out;
+                -o-transition: 0.4s ease-in-out;
+            }
+
+            &_number {
+                position: relative;
+                top: 30px;
+                font-size: 90px;
+                -webkit-text-stroke: 1px $gray-color9;
+                -webkit-text-fill-color: $white-color;
+            }
+
+            &_title {
+                color: $gray-color8;
+                font-family: $title-font;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 40px;
+                /* 133.333% */
+                text-transform: capitalize;
+                margin-bottom: 10px;
+            }
+
+            &_desc {
+                color: $body-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                /* 162.5% */
+                margin-bottom: 0;
+            }
+        }
+
+
+        &:hover {
+            background-color: $gray-color8;
+
+            .wcu {
+                &_icon {
+                    background: $theme-color;
+                    transform: rotateY(180deg);
+                    -webkit-transform: rotateY(180deg);
+                    -moz-transform: rotateY(180deg);
+                    -ms-transform: rotateY(180deg);
+                    -o-transform: rotateY(180deg);
+                }
+                &_number { 
+                    -webkit-text-stroke: 1px $white-color;
+                    -webkit-text-fill-color: transparent;
+                }
+    
+                &_title {
+                    color: $white-color;
+                }
+                &_desc{
+                    color: $gray-color3;
+                }
+            }
+
+        }
+    }
+}
+
+@include md{
+    .wcu-area2 .wcu-thumb1-1 {
+        position: relative;
+        margin-left: 0px;
+    }
+}
+
+@include vxs{
+    .wcu-area .desc { 
+        font-size: 14px; 
+        line-height: 24px; 
+    }
+}

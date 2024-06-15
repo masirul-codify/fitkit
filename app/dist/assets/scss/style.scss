@@ -1,0 +1,279 @@
+/*
+Theme Name: Fitkit
+Template URL: http://themeholy.com/html/fitkit
+Description: Fitkit - Gym & Fitness Center HTML Template
+Author: Themeholy
+Author URI: https://themeforest.net/user/themeholy
+Version: 1.0.0
+*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin 
+    1.3. Variable
+    1.4. Typography 
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input 
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+    3.11. Nice select 
+    
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Bmi Area
+    4.10. Error    
+    4.11. Popup Search
+    4.12. Popup Side Menu 
+    4.13. Products
+    4.14. Cart 
+    4.15. Checkout
+    4.16. Contact
+    4.17. About
+    4.18. Trainer
+    4.19. Testimonial
+    4.20. Counter
+    4.21. Client 
+    4.22. Faq
+    4.23. CTA
+    4.24. Service
+    4.25. Pricing
+    4.26. Why Choose Us
+    4.27. Subscribe
+    4.28. Work Process
+    4.29. Class Schedule
+    4.30. Fitness Classes
+    4.31. Fitness Classes
+    4.32. Fitness
+    4.33. Video Play
+    4.34. Gallery
+    4.35. Appointment
+
+    05. Spacing 
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+
+
+/*=================================
+   01. Theme Base
+==================================*/
+/*------------------- 1.1. Mixin -------------------*/
+@import 'base/mixin';
+
+/*------------------- 1.3. Variable-------------------*/
+@import 'base/variable';
+
+/*------------------- 1.5. Typography -------------------*/
+@import 'base/typography';
+
+/*------------------- 1.7. Wordpress Default -------------------*/
+@import 'base/wpdefault';
+
+
+/*=================================
+    02. Reset
+==================================*/
+/*------------------- 2.1. Container -------------------*/
+@import 'reset/container';
+
+/*------------------- 2.2. Grid -------------------*/
+@import 'reset/grid';
+
+/*------------------- 2.3. Input -------------------*/
+@import 'reset/input';
+ 
+
+/*------------------- 2.5. Mobile Menu -------------------*/
+@import 'reset/thmenu';
+
+
+/*=================================
+    03. Utilities
+==================================*/
+/*------------------- 3.1. Preloader -------------------*/
+@import 'utilities/preloader';
+
+/*------------------- 3.2. Buttons -------------------*/
+@import 'utilities/btns';
+
+/*------------------- 3.3. Titles -------------------*/
+@import 'utilities/titles';
+
+/*------------------- 3.4. Common -------------------*/
+@import 'utilities/common';
+
+/*------------------- 3.6. Font -------------------*/
+@import 'utilities/font';
+
+/*------------------- 3.7. Background -------------------*/
+@import 'utilities/background';
+
+/*------------------- 3.8. Text Color -------------------*/
+@import 'utilities/text-color';
+
+/*------------------- 3.9. Overlay -------------------*/
+@import 'utilities/overlay';
+
+/*------------------- 3.10. Animation -------------------*/
+@import 'utilities/animation';
+
+/*------------------- 3.11. Nice select -------------------*/
+@import 'utilities/nice-select';
+
+/*------------------- 3.12. Swiper Slider -------------------*/
+@import 'utilities/slider';
+
+/*=================================
+    04. Template Style
+==================================*/
+/*------------------- 4.1. Widget  -------------------*/
+@import 'template/widgets/widget-default-list';
+@import 'template/widgets/widget-sidebar';
+@import 'template/widgets/widget-footer';
+
+
+/*------------------- 4.2. Header  -------------------*/
+@import 'template/headers/header';
+
+/*------------------- 4.3. Footer  -------------------*/
+@import 'template/footers/footer';
+
+/*------------------- 4.4. Breadcumb  -------------------*/
+@import 'template/breadcumb/breadcumb-v1';
+
+/*------------------- 4.5. Pagination  -------------------*/
+@import 'template/sections/pagination-v1';
+
+/*------------------- 4.6. Blog  -------------------*/
+@import 'template/sections/blog'; 
+
+/*------------------- 4.7. Comments  -------------------*/
+@import 'template/sections/comments';
+
+/*------------------- 4.8. Hero Area  -------------------*/
+@import 'template/sections/hero';
+
+/*------------------- 4.9. Bmi Area  -------------------*/
+@import 'template/sections/bmi';
+
+/*------------------- 4.10. Error  -------------------*/
+@import 'template/sections/error';
+
+/*------------------- 4.11. Popup Search  -------------------*/
+@import 'template/sections/popupsearch-v1';
+
+/*------------------- 4.12. Popup Side Menu  -------------------*/ 
+
+@import 'template/sections/sidemenu-v1';
+
+/*------------------- 4.13. Products  -------------------*/
+@import 'template/sections/products';
+
+/*------------------- 4.14. Cart  -------------------*/
+@import 'template/sections/cart';
+
+/*------------------- 4.15. Checkout  -------------------*/
+@import 'template/sections/checkout';
+
+/*------------------- 4.16. Wishlist  -------------------*/
+@import 'template/sections/wishlist'; 
+ 
+/*------------------- 4.17. Woocommerce  -------------------*/
+@import 'template/sections/woocommerce';  
+ 
+/*------------------- 4.18. Simple-section  -------------------*/
+@import 'template/sections/simple-sections'; 
+
+/*------------------- 4.19. Contact  -------------------*/
+@import 'template/sections/contact'; 
+
+/*------------------- 4.20. About  -------------------*/
+@import 'template/sections/about';
+
+/*------------------- 4.21. Trainer  -------------------*/
+@import 'template/sections/trainer';
+
+/*------------------- 4.22. Testimonial  -------------------*/
+@import 'template/sections/testimonial';
+
+/*------------------- 4.23. Counter  -------------------*/
+@import 'template/sections/counter';
+
+/*------------------- 4.24. Client  -------------------*/
+@import 'template/sections/client';
+
+/*------------------- 4.25. Faq -------------------*/
+@import 'template/sections/faq';
+
+/*------------------- 4.26. CTA -------------------*/
+@import 'template/sections/cta';
+
+/*------------------- 4.27. Service -------------------*/
+@import 'template/sections/service';
+
+/*------------------- 4.28. Pricing -------------------*/
+@import 'template/sections/pricing';
+
+/*------------------- 4.29. Why Choose Us -------------------*/
+@import 'template/sections/wcu';
+
+/*------------------- 4.30. Subscribe -------------------*/
+@import 'template/sections/subscribe';
+
+/*------------------- 4.31. Work Process -------------------*/ 
+@import 'template/sections/work-process';
+
+/*------------------- 4.32. Class Schedule -------------------*/
+@import 'template/sections/class-schedule';
+
+/*------------------- 4.33. Fitness Classes -------------------*/
+@import 'template/sections/fitness_classes';
+
+/*------------------- 4.34. Fitness Classes -------------------*/
+@import 'template/sections/portfolio';
+
+/*------------------- 4.35. Fitness -------------------*/
+@import 'template/sections/fitness';
+
+/*------------------- 4.36. Video Play -------------------*/
+@import 'template/sections/video-play';
+ 
+
+/*------------------- 4.37.Gallery -------------------*/
+@import 'template/sections/gallery';
+ 
+
+/*------------------- 4.38. Appointment -------------------*/
+@import 'template/sections/appointment';
+ 
+
+
+
+/*=================================
+    05. Spacing
+==================================*/
+@import 'spacing/spacing'; 

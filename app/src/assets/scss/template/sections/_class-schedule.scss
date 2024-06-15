@@ -1,0 +1,208 @@
+/* Class Schedule area */
+.class-schedule-area{
+    position: relative;
+    overflow: hidden;
+    .shape1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    .shape2{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+    }
+    .shape3{
+        position: absolute;
+        top: 74px;
+        right: 0;
+        z-index: 0;
+        @include sm{
+            display: none;
+        }
+    }
+    .shape4{
+        position: absolute;
+        top: 174px;
+        right: 0;
+        z-index: 0;
+        @include sm{
+            display: none;
+        }
+    }
+    .shape5{
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        z-index: 0;
+        @include sm{
+            display: none;
+        }
+    } 
+    .shape6{
+        position: absolute;
+        bottom: 160px;
+        left: 0;
+        z-index: 0;
+        @include sm{
+            display: none;
+        }
+    } 
+
+}
+
+.class-schedule-area2{ 
+    position: relative;
+    overflow: hidden;
+    .shape3{
+        position: absolute;
+        top: 248px;
+        right: 0;
+        z-index: 0;
+        @include sm{
+            display: none;
+        }
+    }
+    .shape4{
+        position: absolute;
+        top: 355px;
+        right: 0;
+        z-index: 0;
+        @include sm{
+            display: none;
+        }
+    }
+    .shape5{
+        position: absolute;
+        top: 248px;
+        left: 0;
+        z-index: 0;
+        @include sm{
+            display: none;
+        }
+    } 
+    .shape6{
+        position: absolute;
+        top: 355px;
+        left: 0;
+        z-index: 0;
+        @include sm{
+            display: none;
+        }
+    } 
+    .table thead tr th {
+        border: 1px solid $gray-color8;
+        background-color:  $gray-color8;
+        color: $white-color;
+        text-align: center;
+    }
+    .table> :not(:last-child)> :last-child>* {
+        border-bottom-color: $gray-color8;
+    }
+    .table tbody tr td .class_wrapper.active {
+        background-color:  $gray-color8;
+    }
+}
+
+
+table,
+.table{ 
+    margin-bottom: 0px;
+}
+
+.table{ 
+    position: relative;
+    z-index: 3;
+    &>:not(:last-child)>:last-child>* {
+        border-bottom-color: $theme-color;
+    }
+ 
+    thead{
+        tr{ 
+            th{
+                border: 1px solid $theme-color;
+                background-color: $theme-color;
+                color: $white-color;
+                text-align: center;
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{ 
+                padding: 4px!important; 
+                border: 1px solid $border-color4;
+                text-align: center;
+                .time{ 
+                    width: 135px;
+                    margin-top: 40px;
+                    color: $white-color; 
+                    @include sm{
+                        font-size: 16px;
+                    } 
+                }
+                .class_wrapper{ 
+                    &.rowspan{
+                        margin-top: 60px;
+                    }
+                    margin: 0 auto;
+                    width: 146px;
+                    height: 112px; 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    background-color: $gray-color5;
+                    .class_name{
+                        display: inline-block;
+                        color: $white-color;
+                        text-align: center;  
+                        font-family: $title-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 28px; 
+                        @include sm{
+                            font-size: 16px;
+                        } 
+                    }
+                    .trainer_name{ 
+                        display: inline-block;
+                        color: $gray-color3;
+                        text-align: center;  
+                        font-family: $body-font;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;   
+                        @include sm{
+                            font-size: 16px;
+                        } 
+                    } 
+
+                    &.active{  
+                        background-color: $theme-color;
+                        .trainer_name{
+                          color: $white-color;
+                        }
+                      }
+                }
+
+            }
+        }
+    }
+}
+
+@include vxs{
+    .table tbody tr td .time {
+        font-size: 14px;
+    }
+    .table tbody tr td .class_wrapper .class_name {
+        font-size: 14px;
+    }
+    .table tbody tr td .class_wrapper .trainer_name {
+        font-size: 14px;
+    }
+}

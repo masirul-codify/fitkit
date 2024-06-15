@@ -1,0 +1,92 @@
+<!--==============================
+Bmi Area  
+==============================-->
+<div class="bmi-area space-bottom overflow-hidden">
+    <div class="container">
+        <div class="title-area text-center">
+            <span class="sub-title"><span class="double-line"></span> Body Mass Index </span>
+            <h2 class="sec-title text-white">Calculate Your BMI Now</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-12">
+                <div class="bmi-calculator-form">
+                    <form class="bmi-form" id="form" name="bmiCalc">
+                        <div class="row gx-30">
+                            <div class="col-md-3 col-lg-3">
+                                <div class="form-group">
+                                    <input id="weight" class="form-control style-border" placeholder="Weight / KG" type="text" name="weight">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                                <div class="form-group">
+                                    <input id="height" class="form-control style-border" placeholder="Height / CM" type="text" name="height">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                                <div class="form-group">
+                                    <input type="number" class="form-control style-border" name="age" id="age" placeholder="Age">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                                <div class="form-group">
+                                    <select name="classes" class="form-select form-control style-border style3">
+                                        <option value="" disabled="disabled" selected="selected" hidden="">Sex</option>
+                                        <option value="1">Male</option>
+                                        <option value="2">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                                <div class="form-group last-child">
+                                    <select name="classes" class="form-select form-control style-border style3">
+                                        <option value="" disabled="disabled" selected="selected" hidden="">Select an activity factor</option>
+                                        <option value="1">Walking</option>
+                                        <option value="2">Running</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                                <div class="form-group">
+                                    <input id="bmi_result" class="form-control style-border" placeholder="Your BMI" type="text" name="bmi" readonly>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                                <div class="form-group">
+                                    <input id="bmi_message" placeholder="This Means" class="form-control style-border" type="text" name="meaning" readonly>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3">
+                                <div class="th-btn style4 last-child">
+                                    <input type="button" value="Calculate Now" onclick="calculateBMI()">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                
+            </div>
+            <div class="col-xl-12">
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-end">
+                                <div>
+                                    <span class="close">&times;</span>
+                                </div> 
+                            </div>
+                            <div class="col-12">
+                                <div class="bmi-result-box">
+                                    <div id="bmiResult" class="bmi"></div>
+                                    <div id="bmiMeaning" class="comment"></div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                      
+                    </div>
+                  </div> 
+            </div>
+        </div>
+    </div>
+</div>

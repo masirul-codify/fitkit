@@ -1,0 +1,188 @@
+:root {
+  /*==================*/
+  --theme-color: #F41E1E;
+  --title-color: #161921;
+  --body-color: #6A6A6A;
+  --white-color: #ffffff;
+  --light-color: #BDBDBD;
+  --black-color: #000000; 
+
+  --gray-color: #F5F5F5;  
+  --gray-color3: #AFB8C7; 
+  --gray-color4:  #6B7586;
+  --gray-color5: #141414; 
+  --gray-color6: #171717; 
+  --gray-color7: #34383E;
+  --gray-color8: #1D2229;
+  --gray-color9: #D8DDE1;
+  --gray-color10: #f8f8f8;
+  --gray-color11: #171B2A;
+  --gray-color12: #22272E;
+  --gray-color13: #2F394A;
+  --gray-color14: #49515C;
+  --gray-color15: #f7f7f7;
+
+  --border-color: #E0E0E0;
+  --border-color2: #383D46;
+  --border-color3: #D9D9D9;
+  --border-color4: #252A31;
+  --border-color5: #2F343B;  
+  --border-color6: #353b45;  
+  --border-color7: #2d333d; 
+  --border-color8: #383E47;
+  --border-color9: #5C6672;
+
+  
+  
+  --bg-color1 : #F2F2F2;
+
+  --title-font: "Kanit", sans-serif;
+  --body-font: "Archivo", sans-serif;
+  /*==================*/
+  --theme-color2: #524FF5;
+  --theme-color3: #F41E1E;
+  --smoke-color1: #F8F8F8;
+  --smoke-color2: #F6FBFF; 
+  --error-color: #dc3545;
+  --yellow-color: #FFB539;
+  --text-color: #1D2229;
+  --text-color2: #AFB8C7;
+  --style-font: "Ink Free";
+  --icon-font: "Font Awesome 6 Pro";
+  --main-container: 1920px;
+  --container-gutters: 30px;
+  --section-space: 120px;
+  --section-space-mobile: 80px;
+  --section-title-space: 60px;
+  --ripple-ani-duration: 5s;
+}
+
+// Color Variation
+/*==================*/
+
+$theme-color : var(--theme-color);
+$title-color : var(--title-color);
+$body-color : var(--body-color);
+$white-color : var(--white-color);
+$light-color : var(--light-color);
+$black-color : var(--black-color);
+
+$gray-color : var(--gray-color); 
+$gray-color3 : var(--gray-color3);  
+$gray-color4 : var(--gray-color4);  
+$gray-color5 : var(--gray-color5); 
+$gray-color6 : var(--gray-color6);   
+$gray-color7 : var(--gray-color7);  
+$gray-color8 : var(--gray-color8);  
+$gray-color9 : var(--gray-color9);  
+$gray-color10 : var(--gray-color10);  
+$gray-color11 : var(--gray-color11);  
+$gray-color12 : var(--gray-color12);  
+$gray-color13 : var(--gray-color13);  
+$gray-color14 : var(--gray-color14);  
+$gray-color15 : var(--gray-color15);  
+  
+$border-color : var(--border-color);
+$border-color2 : var(--border-color2);
+$border-color3 : var(--border-color3);
+$border-color4 : var(--border-color4); 
+$border-color5 : var(--border-color5);
+$border-color6 : var(--border-color6);
+$border-color7 : var(--border-color7); 
+$border-color8 : var(--border-color8); 
+$border-color9 : var(--border-color9); 
+ 
+$bg-color1     : var(--bg-color1);
+$dark-bg       : var(--gray-color5);
+
+/*==================*/
+$theme-color2 : var(--theme-color2);
+$theme-color3 : var(--theme-color3);
+$smoke-color : var(--smoke-color);
+$smoke-color2 : var(--smoke-color2);
+$smoke-color4 : var(--smoke-color4);
+$yellow-color : var(--yellow-color);
+$success-color : var(--success-color);
+$error-color : var(--error-color);
+$text-color : var(--text-color);
+$text-color2 : var(--text-color2);
+
+// Font Variation
+$icon-font : var(--icon-font);
+
+// Typography
+$title-font : var(--title-font);
+$body-font : var(--body-font);
+$style-font : var(--style-font);
+$body-font-size : 16px;
+$body-line-Height: 26px; 
+$body-font-weight: 400;
+$p-line-Height : 1.75;
+
+// Device Variation
+$hd: 1921px; // Large Device Than 1920
+$xxl: 1500px; // Extra large Device
+$ml: 1399px; // Medium Large Device
+$xl: 1299px; // Medium Large Device
+$lg: 1199px; // Large Device (Laptop)
+$md: 991px; // Medium Device (Tablet)
+$sm: 767px; // Small Device
+$xs: 575px; // Extra Small Device
+$vxs: 375px; // Extra Small Device
+
+// Spacing Count with 5x
+$space-count: 20;
+
+// Section Space  For large Device
+$space : var(--section-space);
+$space-extra : calc(var(--section-space) - 45px);
+$space-extra2 : calc(var(--section-space) - 60px);
+$space2 : calc(var(--section-space) - 10px);
+
+// Section Space On small Device
+$space-mobile : var(--section-space-mobile);
+$space-mobile-extra: calc(var(--section-space-mobile) - 30px);
+
+
+// BG Color Mapping 
+$bgcolorMap : ();
+$bgcolorMap : map-merge(("theme" : $theme-color,
+    "smoke" : $smoke-color,
+    "gray" : $gray-color,
+    "smoke2" : $smoke-color2, 
+    "white" : $white-color,
+    "black" : $black-color,
+    "title" : $title-color,
+  ), $bgcolorMap);
+
+
+// Overlay Color Mapping 
+$overlaycolorMap : ();
+$overlaycolorMap : map-merge(("theme" : $theme-color,
+    "title" : $title-color,
+    "white" : $white-color,
+    "black" : $black-color,
+    "overlay1" : #131B23,
+  ), $overlaycolorMap);
+
+
+// Text Color Mapping 
+$textColorsMap : ();
+$textColorsMap : map-merge(("theme" : $theme-color,
+    "title" : $title-color,
+    "body" : $body-color,
+    "white" : $white-color,
+    "light" : $light-color,
+    "yellow" : $yellow-color,
+    "success" : $success-color,
+    "error" : $error-color),
+  $textColorsMap);
+
+
+// Font Mapping 
+$fontsMap : ();
+$fontsMap : map-merge(("icon" : $icon-font,
+    "title" : $title-font,
+    "body" : $body-font,
+    "style" : $style-font,
+  ), $fontsMap);

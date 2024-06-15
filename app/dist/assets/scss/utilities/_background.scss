@@ -1,0 +1,58 @@
+@each $bgcolorMap, $value in $bgcolorMap {
+  .bg-#{$bgcolorMap} {
+    background-color: #{$value} !important;
+  }
+}
+
+.background-image,
+[data-bg-src] {
+  @include background-content(no-repeat, cover, center center);
+}
+
+.bg-fluid {
+  @include background-content(no-repeat, 100% 100%, center center);
+}
+
+.bg-auto {
+  background-size: auto auto;
+}
+
+.bg-top-center {
+  background-size: auto;
+  background-position: top center;
+}
+
+.bg-repeat {
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+
+.light-bg{
+  background-color: $gray-color;
+}
+
+.dark-bg{
+  background-color: $gray-color5;
+}
+
+.gray-bg{
+  background-color: $gray-color8!important;
+}
+.gray-light-bg{
+  background-color: $gray-color4!important; 
+}
+.dark-bg-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  background-color: $black-color;
+  opacity: 0.89;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.bg_red_blur{ 
+  background: linear-gradient(180deg, rgba(244, 30, 30, 0.20) 0%, rgba(244, 30, 30, 0.00) 61.98%)!important;
+}
